@@ -1,0 +1,231 @@
+:root {
+    --color-primary: #BB8394;
+    --color-default: #8E8D8D;
+    --color-error: #7A2B43;
+    --color-info: #9EC2BA;
+    --color-text-light: #000;
+    --color-text-dark: #FFF;
+    --font-alegreya-sans-sc: 'Alegreya Sans SC', sans-serif;
+    --font-cinzel: 'Cinzel', serif;
+    --font-playfair: 'Playfair Display', serif;
+}
+
+
+/* Close menu  */
+.close-menu-button {
+    z-index: 12;
+    border: solid 0px transparent;
+    background-color: var(--color-primary);
+    padding: 12px;
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+/* Close menu  */
+
+/* Toggle menu button */
+.menu-button {
+    border: solid 0px transparent;
+    background-color: var(--color-primary);
+    padding: 12px;
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 12;
+}
+
+.nav--menu-icon {
+    color: var(--color-text-dark);
+}
+.nav--menu-icon:active {
+    color: var(--color-text-light);
+}
+/* Toggle menu button */
+
+
+/* Nav bar */
+#navbar {
+    background-image: url('../assets/background.jpg');
+    position: fixed;
+    z-index: 11;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-transition {
+    transition: opacity 0.15s linear;
+}
+
+
+.button-container{
+    border: solid 0px transparent;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 16px;
+    gap: 8px;
+    border-radius: 8px;
+    width: 80vw;
+    height: 7vh;
+    color: var(--color-text-dark);
+}
+
+.button-container:active {
+    color: var(--color-text-light);
+}
+
+.button-container:not(:active) > a {
+    color: var(--color-text-dark);
+}
+
+.button-container:active > a {
+    color: var(--color-text-light);
+}
+
+.nav--label {
+    /* font-family: var(--font-alegreya-sans-sc); */
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.hide {
+    opacity: 0;
+    display: none;
+    position: absolute;
+    visibility: hidden;
+}
+
+.show {
+    opacity: 1;
+}
+/* Nav bar */
+
+
+/* Home section */
+#home {
+    background-image: url('../assets/background.jpg');
+    width: 100vw;
+    height: 100vh;
+
+    padding: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+#home > div > .name-title {
+    color: var(--color-error);
+    font-size: 2em;
+    font-family: var(--font-cinzel);
+}
+
+#home > div > .name-description {
+    color: var(--color-error);
+    font-family: var(--font-cinzel);
+    text-shadow: 20px 4px 4px #0000005C;
+}
+
+.svg-redirect-box {
+    text-decoration: none;
+    color: var(--color-text-dark);
+    background-color: var(--color-primary);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.svg-redirect-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    padding-top: 16px;
+    padding-left: 16px;
+}
+/* Home section */
+
+
+.section--card {
+    display: flex;
+    align-items: center;
+    padding: 32px 16px;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.section-card-title {
+    background-color: var(--color-primary);
+    color: var(--color-text-dark);
+    font-size: 1.5em;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-family: var(--font-alegreya-sans-sc);
+    white-space: nowrap;
+    width: min-content;
+}
+
+
+
+/* Person section */
+#person > div {
+    text-align: center;
+    font-family: var(--font-playfair);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#person > .hobbies-content > img {
+    border-radius: 16px;
+    height: auto;
+}
+
+#person > .hobbies-content {
+    display: grid;    
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4px;
+}
+
+img[alt="Uma foto minha em um acampamento"]{
+    width: 100px;
+    margin-bottom: -20px;
+}
+
+img[alt="Uma fotinha minha"]{
+    width: 70px;
+}
+
+img[alt="Eu em um coral cantando"]{
+    width: 100px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+img[alt="Eu e meu violão"]{
+    width: 100px;
+    margin-left: -10px;
+}
+/* Person section */

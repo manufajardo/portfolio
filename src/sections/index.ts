@@ -1,0 +1,6 @@
+export * from './home'
+export * from './navbar'
+export * from './person'
+export * from './menu-book'
+export * from './contact-page'
+export * from './contact-phone'
